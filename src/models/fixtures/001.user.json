@@ -1,0 +1,26 @@
+[
+  {
+    "model": "User",
+    "data": {
+      "email": "makeshifttest@gmail.com",
+      "username": "taapesh",
+      "password": "123456"
+    }
+  },
+  {
+    "model": "User",
+    "data": {
+      "email": "bob@test.com",
+      "username": "bob",
+      "password": "123456"
+    }
+  },
+  {
+    "model": "User",
+    "data": {
+      "email": "alice@test.com",
+      "username": "alice",
+      "password": "123456"
+    }
+  }
+]

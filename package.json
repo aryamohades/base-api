@@ -1,0 +1,45 @@
+{
+  "name": "example-api",
+  "version": "1.0.0",
+  "author": "taapesh",
+  "private": true,
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "scripts": {
+    "dev": "nodemon --watch src ./src/server.js",
+    "lint": "./node_modules/.bin/eslint src/**",
+    "docker-stop": "docker stop example_app || true && docker stop example_postgres || true",
+    "docker-remove": "docker rm example_app || true && docker rm example_postgres || true",
+    "clean": "rm -rf node_modules && rm -f yarn.lock && yarn cache clean && yarn",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.2",
+    "compression": "^1.7.2",
+    "cors": "^2.8.4",
+    "express": "^4.16.2",
+    "helmet": "^3.11.0",
+    "jsonwebtoken": "^8.1.1",
+    "morgan": "^1.9.0",
+    "nodemailer": "^4.6.8",
+    "nodemailer-express-handlebars": "^3.0.0",
+    "nodemailer-mailgun-transport": "^1.4.0",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0",
+    "passport-local": "^1.0.0",
+    "pg": "^7.4.1",
+    "sequelize": "^4.33.4",
+    "sequelize-fixtures": "^0.7.0",
+    "validator": "^9.4.1",
+    "winston": "^3.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.18.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^5.1.1",
+    "sequelize-cli": "^4.1.1"
+  }
+}

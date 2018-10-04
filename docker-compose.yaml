@@ -1,0 +1,30 @@
+version: "3"
+services:
+  app:
+    container_name: example_app
+    build: .
+    volumes:
+      - .:/app/
+    ports:
+      - "8080:8080"
+    depends_on:
+      - postgres
+    environment:
+      NODE_ENV: development
+      PORT: 8080
+      DATABASE_URL: postgres://user@postgres:5432/example
+      APP_SECRET: 12345abcde
+      MAILGUN_EMAIL: <MAILGUN_EMAIL e.g. postmaster@sandbox.mailgun.org>
+      MAILGUN_DOMAIN: <MAILGUN_DOMAIN e.g. sandbox.mailgun.org>
+      MAILGUN_ACTIVE_API_KEY: <MAILGUN_ACTIVE_API_KEY>
+      RESET_PASSWORD_URL: http://localhost:8080/reset-password?token=
+      LOGIN_URL: http://localhost:8080/login
+      CONFIRM_EMAIL_URL: http://localhost:8080/confirm-email?token=
+  postgres:
+    container_name: example_postgres
+    image: postgres:9.6.2-alpine
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_DB: example
