@@ -18,12 +18,22 @@ This project handles the basic essentials of a typical API.
 
 ## Installation
 ```bash
-git clone https://github.com/aryamohades/Koach.git
+git clone https://github.com/aryamohades/base-api.git
 ```
 
 ## Features
 * [Express](https://github.com/expressjs/express)
-* ...
+* [Redis](https://redis.io)
+* [PostgreSQL](https://www.postgresql.org)
+* [Sequelize](https://github.com/sequelize/sequelize)
+* [Passport](https://github.com/jaredhanson/passport)
+* [jsonwebtoken](https://github.com/auth0/node-jsonwebtoken)
+* [sequelize-fixtures](https://github.com/domasx2/sequelize-fixtures)
+* [ESLint](https://github.com/eslint/eslint)
+* [cors](https://github.com/expressjs/cors)
+* [Helmet](https://github.com/helmetjs/helmet)
+* [Nodemon](https://github.com/remy/nodemon)
+* [Docker](https://www.docker.com)
 
 ## Usage
 * `yarn run start` Build and run the app in one command using docker-compose
