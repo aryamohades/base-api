@@ -9,6 +9,7 @@ This project handles the basic essentials of a typical API.
 * Optional caching using Redis
 * Clustering using the node cluster module with automatic worker restart
 * A convenient query middleware builder based on Sequelize
+* An enjoyable local development experience with loading data into database from json and auto docker container restart when your files change
 * Testing (mocha)
 * linting with ESLint
 
