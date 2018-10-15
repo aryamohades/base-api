@@ -1,4 +1,4 @@
-# base-api
+# CRAPI
 A starting point for a production ready Node.js + Express API using PostgreSQL as the database. It includes user authentication, password and email reset, Redis caching (soon), and a Docker config for easy local development.
 
 ## Description
